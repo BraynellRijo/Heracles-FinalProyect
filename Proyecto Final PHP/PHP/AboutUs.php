@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de nosotros</title> 
-    <link rel="shortcut icon" href="/assets/Img/LogoPng.png" type="image/x-icon">
-    <link rel="stylesheet" href="../Css/AboutUs.css">  
+    <link rel="shortcut icon" href="../assets/Img/LogoPng.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/Css/AboutUs.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
@@ -16,22 +16,18 @@
 
 </head>
 <body>
-    <header id="header">
+<header id="header">
         
-        <a href="Index.html"><h2 class="Logo"><img src="/assets/Img/LogoMejorado.png" alt="">Heracles</h2></a>
+    <a href="Index.php"><h2 class="Logo"><img src="../assets/Img/LogoMejorado.png" alt="">Heracles</h2></a>
+
     <nav id="menuH">
         <!-- <img src="Img/LogoPng.png" alt="" class="logo"> -->
-        <a href="/assets/HTML/Index.html"class="mH">Inicio</a>
-        <a href="/assets/HTML/Product.html"class="mH">Productos</a>
-        <a href="/assets/HTML/ServicioCliente.html"class="mH">Servicio al cliente</a>
-        <a href="/assets/HTML/AboutUs.html" class="mH"class="mH">Acerca de nosotros</a>
-        <a href="/assets/HTML/Login.html" class="mH Login">Login</a>
-
-
-            
-
+        <a href="Index.php"class="mH">Inicio</a>
+        <a href="Product.php"class="mH">Productos</a>
+        <a href="ServicioCliente.php"class="mH">Servicio al cliente</a>
+        <a href="AboutUs.php" class="mH"class="mH">Acerca de nosotros</a>
+        <a href="Login.php" class="mH Login">Login</a>
     </nav>
-
 </header>
 
 <main>
@@ -74,7 +70,7 @@
     
 <div class="contactanos"> 
     <div class="img-contacto">
-        <img src="/assets/Img/[removal.ai]_6e698d60-de36-40e2-8776-807ac3cb45c2-6029674.png" alt="">
+        <img src="../assets/Img/[removal.ai]_6e698d60-de36-40e2-8776-807ac3cb45c2-6029674.png" alt="">
     </div>
     <div class="content-contacto">
     <div class="title contacto"><h3>Ayudenos a mejorar, sugiriendonos que podriamos cambiar o mejorar</h3></div>

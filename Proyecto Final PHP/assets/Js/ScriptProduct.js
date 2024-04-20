@@ -301,7 +301,7 @@ document.getElementById("search").addEventListener("click", () =>{
         }
     })
 });
-
+ 
 //iniciarmente se deben presentar todos los productos
 
 window.onload = () => {
@@ -333,10 +333,10 @@ closeCart.addEventListener("click", ()=>{
 
 let listCarts = [];
 
-function addtocart(key){
-    if(listCarts[key] == null){
-        listCarts[key] = products[key];
-        listCarts[key].countCart = 1;
+function addtocart(id){
+    if(listCarts[id] == null){
+        listCarts[id] = products[id];
+        listCarts[id].countCart = 1;
     }
     reloadCart();
 }
@@ -345,7 +345,7 @@ function reloadCart() {
     listCart.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
-    listCarts.forEach((value, key) =>{  
+    listCarts.forEach((value, id) =>{  
         totalPrice = totalPrice + value.price;
         count = count + value.countCart;
 
@@ -357,9 +357,9 @@ function reloadCart() {
             <div>${value.price.toLocaleString()}</div>
             <div>${value.countCart}</div>
             <div>
-            <button onclick="changeQuantity(${key}, ${value.countCart - 1})">-</button>
+            <button onclick="changeQuantity(${id}, ${value.countCart - 1})">-</button>
             <div class="count"${value.countCart}</div>
-            <button onclick="changeQuantity(${key}, ${value.countCart + 1})">+</button>
+            <button onclick="changeQuantity(${id}, ${value.countCart + 1})">+</button>
             </div>`
             listCart.appendChild(newDiv)
         }

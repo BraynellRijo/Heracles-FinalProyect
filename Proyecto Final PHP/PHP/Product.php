@@ -91,19 +91,22 @@ if (!empty($searchTerm)) {
             <input type="search" placeholder="Buscar..." id="search-input" name="search-input" value="<?php echo $searchTerm; ?>">
             <button id="search" type="submit">Buscar</button>
         </div>
+
         <div id="btnCategory">
-            <button class="button-value <?php echo ($selectedCategory == 'Todos') ? 'active' : ''; ?>" name="button-value" id="Todos" value="Todos">Todos</button>
-            <button class="button-value <?php echo ($selectedCategory == 'T-Shirt') ? 'active' : ''; ?>" name="button-value" id="T-Shirt" value="T-Shirt">T-Shirt</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Top') ? 'active' : ''; ?>" name="button-value" id="Top" value="Top">Top</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Sudaderas') ? 'active' : ''; ?>" name="button-value" id="Sudaderas" value="Sudaderas">Sudaderas</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Leggins') ? 'active' : ''; ?>" name="button-value" id="Leggins" value="Leggins">Leggins</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Joggers') ? 'active' : ''; ?>" name="button-value" id="Joggers" value="Joggers">Joggers</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Shorts') ? 'active' : ''; ?>" name="button-value" id="Shorts" value="Shorts">Shorts</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Tenis') ? 'active' : ''; ?>" name="button-value" id="Tenis" value="Tenis">Tenis</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Gorras') ? 'active' : ''; ?>" name="button-value" id="Gorras" value="Gorras">Gorras</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Accesorios') ? 'active' : ''; ?>" name="button-value" id="Accesorios" value="Accesorios">Accesorios</button>
-            <button class="button-value <?php echo ($selectedCategory == 'Equipamiento') ? 'active' : ''; ?>" name="button-value" id="Equipamiento" value="Equipamiento">Equipamiento</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Todos') ? 'active' : '';?>" name="button-value" id="Todos" value="Todos">Todos</button>
+            <button class="button-value <?php echo ($selectedCategory == 'T-Shirt') ? 'active' : '';?>" name="button-value" id="T-Shirt" value="T-Shirt">T-Shirt</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Top') ? 'active' : '';?>" name="button-value" id="Top" value="Top">Top</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Sudaderas') ? 'active' : '';?>" name="button-value" id="Sudaderas" value="Sudaderas">Sudaderas</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Leggins') ? 'active' : '';?>" name="button-value" id="Leggins" value="Leggins">Leggins</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Joggers') ? 'active' : '';?>" name="button-value" id="Joggers" value="Joggers">Joggers</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Shorts') ? 'active' : '';?>" name="button-value" id="Shorts" value="Shorts">Shorts</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Tenis') ? 'active' : '';?>" name="button-value" id="Tenis" value="Tenis">Tenis</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Gorras') ? 'active' : '';?>" name="button-value" id="Gorras" value="Gorras">Gorras</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Accesorios') ? 'active' : '';?>" name="button-value" id="Accesorios" value="Accesorios">Accesorios</button>
+            <button class="button-value <?php echo ($selectedCategory == 'Equipamiento') ? 'active' : '';?>" name="button-value" id="Equipamiento" value="Equipamiento">Equipamiento</button>
         </div>
+
+        <!-- Plantilla de la Carta -->
         <div id="products">
             <?php
             if ($resultProducts->num_rows > 0) {
@@ -180,6 +183,7 @@ if (!empty($searchTerm)) {
     <div class="derechos">
         <p> ©2023-2024 Heracles <small>Always Confortable</small> | Todos los derechos</p>
     </div>
+
 </footer>
 
 
