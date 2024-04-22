@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,800&family=Poppins&display=swap');
+
+:root{
+    color-scheme:  light dark;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Montserrat'; 
+}
+body{
+    background-color: #fff6e5;
+    
+}
+a{
+    text-decoration: none;
+}
+.title{
+    color: #666;
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.text{
+    color: #000;
+    text-align: justify;
+    font-size: 1.4em;
+}
+
+.icon{
+    border-radius: 25px;
+}
+
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 55px;
+    position: relative;
+}
+.Logo{
+    margin: 20px 0 0 60px;
+    position: relative;
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 2.6em;
+    font-weight: 900;
+    color: #fff;
+}
+.Logo img{
+    width: 65px;
+    height: 70px;
+    margin-right: 3px;
+}
+nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: end;
+    align-items: center;
+    
+}
+.mH{
+    position: relative;
+    font-weight: 600;
+    color: ligth-dark(#363636, #d4d4d4);
+    font-size: 18px;
+    margin: 10px 20px;
+    
+}
+.mH::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: 0.4s ease-out;
+}
+      
+.mH:nth-child(1):hover::after,
+.mH:nth-child(2):hover::after,
+.mH:nth-child(3):hover::after,
+.mH:nth-child(4):hover::after{
+    transform: scaleX(1);
+}
+.Login{
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 11px;
+    border: 2px solid #fff;
+    transition: .3s ease-in-out;
+}
+.Login:hover{
+    background-color: #fff;
+}
+
+
+.mH ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 15px;
+    /* transform: scale(0); */
+    
+}
+
+.container-cart{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+.addCart{
+    position: relative;
+    text-align: right;
+}
+.fa-solid{
+    font-size: 35px;
+    cursor: pointer;
+}
+.addCart span{
+    background: red;
+    border-radius: 50%;
+    padding: 3px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute; 
+    top: -15px;
+    left: 80%;
+}
